@@ -1,0 +1,13 @@
+cache/
+env/
+output/
+pelican-plugins/
+pelican-themes/
+plugins/
+*.pyc
+cmd.exe.lnk
+nocommit/
+h-gens.github.io/
+content/notebooks/.ipynb_checkpoints/
+summary.html
+
