@@ -15,4 +15,4 @@ This post is part of a 4-part series on physics-based modeling of the MOS capaci
 
 {% notebook 2015-02-28-MOS-band-diagram.ipynb cells[1:] %}
 
-Download this post's IPython notebook [here](https://github.com/h-gens/h-gens.github.io-pelican/tree/master/content/notebooks/2015-02-28-MOS-band-diagram.ipynb).  
+Download this post's IPython notebook [here](https://github.com/h-gens/h-gens.github.io-pelican/tree/master/content/notebooks/).  

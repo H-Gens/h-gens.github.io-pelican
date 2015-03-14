@@ -50,7 +50,7 @@ STATIC_PATHS = ['images', 'docs']
 # --------------------
 # theme-related
 # --------------------
-THEME = 'pelican-themes/pelican-octopress-theme' # github.com/jakevdp/pelican-octopress-theme
+THEME = 'pelican-octopress-theme' # github.com/H-Gens/pelican-octopress-theme
 
 # --------------------
 # plugins
