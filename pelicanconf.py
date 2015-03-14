@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = u'H.G.'
-SITENAME = u'sitename'
+SITENAME = u'H.Gens'
 # change in publishconf.py
 # leave blank so that urls are relative while developing
 SITEURL = ''
