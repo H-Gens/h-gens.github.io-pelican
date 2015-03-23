@@ -61,6 +61,7 @@ PLUGINS = [
     'liquid_tags.notebook',
     'liquid_tags.youtube',
     'liquid_tags.literal',
+    'sitemap'
 ]
 
 # --------------------
@@ -77,3 +78,20 @@ else:
     EXTRA_HEADER = open('_nb_header_modded.html').read().decode('utf-8')
 # add to template: {% if EXTRA_HEADER %}{{ EXTRA_HEADER }}{% endif %}
 
+# --------------------
+# sitemap-related
+# --------------------
+# https://github.com/getpelican/pelican-plugins/tree/master/sitemap
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'monthly',
+        'pages': 'monthly'
+    }
+}
