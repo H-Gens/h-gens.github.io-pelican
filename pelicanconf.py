@@ -45,7 +45,7 @@ DEFAULT_PAGINATION = 10
 # --------------------
 LOAD_CONTENT_CACHE = False # notebooks are not reloaded when changed if this is True
 DELETE_OUTPUT_DIRECTORY = True
-STATIC_PATHS = ['images', 'docs']
+STATIC_PATHS = ['images', 'docs', 'js', 'css']
 
 # --------------------
 # theme-related
