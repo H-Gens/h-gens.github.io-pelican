@@ -1,7 +1,8 @@
 Title: Prindle 19 basics
 Date: 2015-11-23 21:12
+Category: outdoors
 Tags: sailing
-Summary: A beginner's guide to the Prindle 19 catamaran.  
+Summary: My first sailboat was a Prindle 19 catamaran, and I had no idea what I was doing when I started.  This post attempts to document the things I learned.  
 
 
 I bought a Prindle 19 catamaran as my first boat.  While I was comfortable on/in the water, I hardly knew anything about sailing.  There was a lot to learn, which is what this post attempts to document.  
