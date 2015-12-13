@@ -2,10 +2,10 @@ Title: Creating a grid of matplotlib figures
 Date: 2015-12-13 16:49
 Category: misc
 Tags: python
-Summary: Whenever I'm analyzing a dataset, I tend to create lots of different plots (e.g., plotting y vs x for group 1, again for group 2, plotting y vs a different x, etc.).  Usually, it's a lot more instructive to view all these plots at once so that differences can be readily viewed.  Since it rapidly becomes tedious to manually position/resize the automatically-created plotting windows, I created a tool called [__matplotgrid__](http://github.com/h-gens/matplotgrid) that tiles the windows.  
+Summary: Whenever I'm analyzing a dataset, I tend to create lots of different plots (e.g., y-axis transforms, different x-variables, etc.).  Usually, it's a lot more instructive to view all these plots at once so that differences can be readily viewed.  Since it rapidly becomes tedious to manually position/resize the automatically-created plotting windows, I created a tool called [__matplotgrid__](http://github.com/h-gens/matplotgrid) that tiles the windows.  
 
 
-Whenever I'm analyzing a dataset, I tend to create lots of different plots (e.g., plotting y vs x for group 1, again for group 2, plotting y vs a different x, etc.).  Usually, it's a lot more instructive to view all these plots at once so that differences can be readily viewed.  Since it rapidly becomes tedious to manually position/resize the automatically-created plotting windows, I wrote a tool called [__matplotgrid__](http://github.com/h-gens/matplotgrid) that tiles the windows.  Below is a demonstration of what the tiling looks like.  
+Whenever I'm analyzing a dataset, I tend to create lots of different plots (e.g., y-axis transforms, different x-variables, etc.).  Usually, it's a lot more instructive to view all these plots at once so that differences can be readily viewed.  Since it rapidly becomes tedious to manually position/resize the automatically-created plotting windows, I wrote a tool called [__matplotgrid__](http://github.com/h-gens/matplotgrid) that tiles the windows.  Below is a demonstration of what the tiling looks like.  
 
 ![Example 1 result](images/2015-12-13-matplotgrid/example1.png)  
 > from matplotgrid import GridCreator; gc = GridCreator(); gc.create(8)  
@@ -35,7 +35,7 @@ Behavior
 - Integer row/columns are the most appropriate, but fractional values are allowed (the grid will just extend off-screen).  
 - The same row/column settings are applied to each monitor, meaning figure size will vary between monitors with different resolution.  
 
-> _NOTE_: [__matplotgrid__](http://github.com/h-gens/matplotgrid)'s goal is to pack the figures as close as possible.  How successful this is depends on the operating system and theme because these determine the border surrounding the figure.  The largest contribution to the border is the titlebar (in Windows this contains the window's title and the minimize/maximize/close icons).  I chose default values that reflected the border for the Windows 7 "Aero" theme, but this is configurable via the <code>prop</code> kwarg when initializing the GridCreator class.  
+> _NOTE_: [__matplotgrid__](http://github.com/h-gens/matplotgrid)'s goal is to pack the figures as close as possible.  How successful this is depends on the operating system and theme because these determine the border surrounding the figure.  The largest contribution to the border is the titlebar (in Windows this contains the window's title and the minimize/maximize/close icons).  I chose default values that reflected the border for the Windows 7 "Aero" theme.  These defaults are configurable via the <code>prop</code> kwarg when initializing the GridCreator class.  
 
 Suggestions  
 -------------
@@ -57,20 +57,20 @@ Example 1
 
 Example 2  
 
-	from matplotgrid import GridCreator  
+	:::python  
 	# create four figures, numbered 9, 10, 11, 12.  
 	gc.create([9, 10, 11, 12])  
 
 Example 3  
 
-	from matplotgrid import GridCreator  
+	:::python  
 	# Create four figures on the second monitor from left.
 	gc = GridCreator(3, 6, 1)  
 	gc.create(4)  
 
 Example 4  
 
-	from matplotgrid import GridCreator  
+	:::python  
 	# Create twenty-two figures but constrain all figures to the first
 	# monitor from left.
 	gc = GridCreator(3, 6, [0])  
